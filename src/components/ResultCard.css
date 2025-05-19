@@ -1,0 +1,50 @@
+.result-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.result-card p {
+    margin-bottom: 5px;
+}
+
+.subject-results {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.subject {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.subject h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Responsive adjustments for ResultCard */
+@media (max-width: 480px) {
+    .subject-results {
+        grid-template-columns: 1fr;
+    }
+}
